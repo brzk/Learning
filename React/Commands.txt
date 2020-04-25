@@ -1,0 +1,9 @@
+to install/download installaiton package of react app:
+npm install -g create-react-app
+
+to create app:
+create-react-app %APPLICATION_Name%
+
+to start the application:
+ 1. navigate to project folder
+ 2. npm start 
