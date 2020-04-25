@@ -1,0 +1,3 @@
+to initialize java project:
+
+https://start.spring.io/
