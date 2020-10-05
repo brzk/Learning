@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SetterInjectionControllerTest {
 
+
     SetterInjectionController controller;
 
     @BeforeEach
@@ -18,6 +19,6 @@ class SetterInjectionControllerTest {
 
     @Test
     void getGreeting(){
-        System.out.println(controller.greetingService.sayGreeting());
+        System.out.println(controller.getGreeting());
     }
 }
