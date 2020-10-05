@@ -13,7 +13,7 @@ public class SfgDiApplication {
 
         I18nController i18nController = (I18nController) applicationContext.getBean("i18nController");
         System.out.println(i18nController.SayHello());
-        
+
         System.out.println("----- Primary Bean");
         MyController myController = (MyController) applicationContext.getBean("myController");
 
