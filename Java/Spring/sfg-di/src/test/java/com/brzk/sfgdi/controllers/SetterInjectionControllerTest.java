@@ -1,24 +1,21 @@
 package com.brzk.sfgdi.controllers;
 
-import com.brzk.sfgdi.services.GreetingServiceImpl;
+import com.brzk.sfgdi.services.SetterInjectedGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class SetterInjectionControllerTest {
-
 
     SetterInjectionController controller;
 
     @BeforeEach
     void setUp() {
         controller = new SetterInjectionController();
-        controller.setGreetingService(new GreetingServiceImpl());
+        controller.setGreetingService(new SetterInjectedGreetingService());
     }
 
     @Test
-    void getGreeting(){
+    void getGreeting() {
         System.out.println(controller.getGreeting());
     }
 }
