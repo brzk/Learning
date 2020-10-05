@@ -1,9 +1,6 @@
 package com.brzk.sfgdi;
 
-import com.brzk.sfgdi.controllers.ConstructorInjectionController;
-import com.brzk.sfgdi.controllers.MyController;
-import com.brzk.sfgdi.controllers.PropertyInjectionController;
-import com.brzk.sfgdi.controllers.SetterInjectionController;
+import com.brzk.sfgdi.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -14,9 +11,12 @@ public class SfgDiApplication {
     public static void main(String[] args) {
         ApplicationContext applicationContext = SpringApplication.run(SfgDiApplication.class, args);
 
+        I18nController i18nController = (I18nController) applicationContext.getBean("i18nController");
+        System.out.println(i18nController.SayHello());
+        
+        System.out.println("----- Primary Bean");
         MyController myController = (MyController) applicationContext.getBean("myController");
 
-        System.out.println("----- Primary Bean");
         System.out.println(myController.SayHello());
 
         System.out.println("----- Property");
