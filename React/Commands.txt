@@ -7,3 +7,7 @@ create-react-app %APPLICATION_Name%
 to start the application:
  1. navigate to project folder
  2. npm start 
+
+
+to install animation:
+npm install react-reveal
